@@ -1,0 +1,322 @@
+2018-09-05 09:20:53,172 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 09:20:53,179 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 13:39:33,840 ID:[7] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 13:39:33,851 ID:[7] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:01:56,493 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:01:56,501 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:01:56,779 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:01:56,779 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:01:56,780 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:03:23,863 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:03:23,870 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:03:24,066 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:03:24,067 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:03:24,067 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:03:57,149 ID:[10] Repository.BaseRepository  ~~ DEBUG ~~ 内存槽不为空，获取内存槽
+2018-09-05 15:04:31,228 ID:[10] Repository.BaseRepository  ~~ DEBUG ~~ 内存槽不为空，获取内存槽
+2018-09-05 15:04:34,187 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:04:34,188 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.Exception: 服务器忙，请重试！
+   在 Repository.BaseRepository.get_Database() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Base\BaseRepository.cs:行号 35
+   在 Repository.BaseRepository..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Base\BaseRepository.cs:行号 67
+   在 Repository.Pur_UserRepo..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 17
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 24
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+Source:Repository
+Message:服务器忙，请重试！
+StackTrace:   在 Repository.BaseRepository.get_Database() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Base\BaseRepository.cs:行号 35
+   在 Repository.BaseRepository..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Base\BaseRepository.cs:行号 67
+   在 Repository.Pur_UserRepo..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 17
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 24
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+
+2018-09-05 15:04:34,189 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:04:42,039 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:04:42,040 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:04:42,081 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:04:42,082 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:04:42,082 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:04:49,036 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:04:49,037 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:04:49,078 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:04:49,078 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:04:49,078 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:04:58,250 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:04:58,251 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:04:58,292 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:04:58,292 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:04:58,293 ID:[10] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:05:21,244 ID:[5] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:05:21,252 ID:[5] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:05:21,611 ID:[5] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:05:21,611 ID:[5] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:05:21,611 ID:[5] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:05:38,839 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:05:40,349 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:06:09,815 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:06:09,816 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:06:09,816 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:06:18,725 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:06:19,677 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:06:40,048 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:06:40,055 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:06:55,372 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:06:55,373 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+Source:mscorlib
+Message:值不能为 null。
+参数名: value
+StackTrace:   在 System.Boolean.Parse(String value)
+   在 Repository.DateBaseContext..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 18
+   在 DirectPurchaseWebApi.Init..ctor() 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\_Base\Init.cs:行号 18
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 45
+
+2018-09-05 15:06:55,374 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:07:05,828 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:07:05,835 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:11:29,604 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:11:30,549 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:12:21,374 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:12:21,375 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.MissingMethodException: 找不到方法:“System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable`1<System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption>)”。
+   在 Repository.Pur_DrugIntelligenceMap..ctor()
+   在 Repository.DateBaseContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 245
+   在 System.Data.Entity.DbContext.CallOnModelCreating(DbModelBuilder modelBuilder)
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Repository.Pur_UserRepo.GetWhere(Expression`1 where) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 84
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 25
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+Source:Repository
+Message:找不到方法:“System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable`1<System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption>)”。
+StackTrace:   在 Repository.Pur_DrugIntelligenceMap..ctor()
+   在 Repository.DateBaseContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 245
+   在 System.Data.Entity.DbContext.CallOnModelCreating(DbModelBuilder modelBuilder)
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Repository.Pur_UserRepo.GetWhere(Expression`1 where) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 84
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 25
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+
+2018-09-05 15:12:21,375 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:17:23,693 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:17:24,978 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:17:54,901 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:17:54,902 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.MissingMethodException: 找不到方法:“System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable`1<System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption>)”。
+   在 Repository.Pur_DrugIntelligenceMap..ctor()
+   在 Repository.DateBaseContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 245
+   在 System.Data.Entity.DbContext.CallOnModelCreating(DbModelBuilder modelBuilder)
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Repository.Pur_UserRepo.GetWhere(Expression`1 where) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 84
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 25
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+Source:Repository
+Message:找不到方法:“System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable`1<System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption>)”。
+StackTrace:   在 Repository.Pur_DrugIntelligenceMap..ctor()
+   在 Repository.DateBaseContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 245
+   在 System.Data.Entity.DbContext.CallOnModelCreating(DbModelBuilder modelBuilder)
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Repository.Pur_UserRepo.GetWhere(Expression`1 where) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 84
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 25
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+
+2018-09-05 15:17:54,902 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:18:01,992 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:18:03,475 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:18:22,105 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info Begin ===
+2018-09-05 15:18:22,106 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ ERROR ~~ 
+
+Exception Info:System.MissingMethodException: 找不到方法:“System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable`1<System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption>)”。
+   在 Repository.Pur_DrugIntelligenceMap..ctor()
+   在 Repository.DateBaseContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 245
+   在 System.Data.Entity.DbContext.CallOnModelCreating(DbModelBuilder modelBuilder)
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Repository.Pur_UserRepo.GetWhere(Expression`1 where) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 84
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 25
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+Source:Repository
+Message:找不到方法:“System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration System.Data.Entity.ModelConfiguration.Configuration.PrimitivePropertyConfiguration.HasDatabaseGeneratedOption(System.Nullable`1<System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption>)”。
+StackTrace:   在 Repository.Pur_DrugIntelligenceMap..ctor()
+   在 Repository.DateBaseContext.OnModelCreating(DbModelBuilder modelBuilder) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\DataContext\DataBaseContext.cs:行号 245
+   在 System.Data.Entity.DbContext.CallOnModelCreating(DbModelBuilder modelBuilder)
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModelBuilder()
+   在 System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   在 System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   在 System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 Repository.Pur_UserRepo.GetWhere(Expression`1 where) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Repository\Repository\Pur_UserRepo.cs:行号 84
+   在 Domain.Pur_UserService.Pur_UserService.Login(String userName, String password) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\Domain.Pur_UserService\Pur_UserService.cs:行号 25
+   在 DirectPurchaseWebApi.LoginApiController.Post(String value) 位置 e:\采购平台\Code\采购平台\PurchasePlatform\DirectPurchaseWebApi\Controller\Login\LoginApiController.cs:行号 48
+
+2018-09-05 15:18:22,107 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ DEBUG ~~ === Error Info End ===
+2018-09-05 15:22:30,907 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:22:31,631 ID:[8] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:23:19,298 ID:[5] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:23:19,305 ID:[5] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:28:28,363 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:28:28,370 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
+2018-09-05 15:37:44,083 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ account:1
+2018-09-05 15:37:44,782 ID:[9] DirectPurchaseWebApi.LoginApiController  ~~ INFO  ~~ password:1
