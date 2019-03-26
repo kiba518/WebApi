@@ -19,8 +19,7 @@ namespace WebApi
             {
                 
                 throw ex;
-            }
-
+            } 
         }
 
         public BaseResult Post([FromBody]string value)
