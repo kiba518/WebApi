@@ -1,8 +1,8 @@
 ﻿using System.Web.Http;
 using Newtonsoft.Json.Serialization;
 using System.Web.Http.Dispatcher;
-
-
+using System.Collections.Generic;
+using System.Reflection;
 namespace Web
 {
     public static class WebApiConfig
@@ -31,7 +31,7 @@ namespace Web
                 defaults: new { id = RouteParameter.Optional }
             );
               
-            config.Services.Replace(typeof(IAssembliesResolver), new ExtendedDefaultAssembliesResolver());
+            //config.Services.Replace(typeof(IAssembliesResolver), new ExtendedDefaultAssembliesResolver());
 
             // 取消注释下面的代码行可对具有 IQueryable 或 IQueryable<T> 返回类型的操作启用查询支持。
             // 若要避免处理意外查询或恶意查询，请使用 QueryableAttribute 上的验证设置来验证传入查询。
@@ -44,6 +44,22 @@ namespace Web
              
           
          
+        }
+    }
+
+
+    public class ExtendedDefaultAssembliesResolver : DefaultAssembliesResolver
+    {
+        public override ICollection<Assembly> GetAssemblies()
+        {
+            //Assembly a = typeof(LoginController).Assembly;
+            //AssemblyName assemblyName = a.GetName();
+            //if (!AppDomain.CurrentDomain.GetAssemblies().Any(assembly => AssemblyName.ReferenceMatchesDefinition(assembly.GetName(), assemblyName)))
+            //{
+            //    AppDomain.CurrentDomain.Load(assemblyName);
+            //}
+
+            return base.GetAssemblies();
         }
     }
 }

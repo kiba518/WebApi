@@ -27,16 +27,13 @@ namespace Web
             else
             {
                 throw new Exception("Error");
-            }
-
-        } 
-         
+            } 
+        }  
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
         {
             //API执行后触发 若发生例外则不在这边处理
             if (actionExecutedContext.Exception != null)
-                return;
-
+                return; 
             base.OnActionExecuted(actionExecutedContext);
         }
     }
